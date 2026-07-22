@@ -120,6 +120,42 @@ nav a:hover, .footer-links a:hover { text-decoration: underline; text-underline-
 .lifestyle-gallery figure { margin: 0; height: 460px; overflow: hidden; }
 .lifestyle-gallery img { height: 100%; object-fit: cover; }
 
+.moon-collection {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: .72fr 1.28fr;
+  background: #092f3d;
+  color: #fff;
+}
+
+.moon-copy {
+  align-self: center;
+  padding: clamp(46px, 5vw, 78px);
+}
+
+.moon-copy h2 { max-width: 520px; }
+.moon-copy > p:not(.section-label) { color: #d2dce0; }
+.moon-copy ul { margin: 26px 0; padding-left: 20px; color: #e7edef; }
+.moon-copy li { margin: 8px 0; }
+.moon-copy .digital-note { padding-left: 14px; border-left: 2px solid #e0b35c; font-size: .86rem; }
+.button-moon { background: #d0a34c; border-color: #d0a34c; color: #12232a; }
+.button-moon:hover { background: #e0ba70; }
+
+.moon-feature { margin: 0; min-height: 590px; overflow: hidden; }
+.moon-feature img { height: 100%; object-fit: cover; }
+
+.moon-gallery {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr 1fr;
+  gap: 8px;
+  padding: 8px;
+  background: #092f3d;
+}
+
+.moon-gallery figure { height: 320px; margin: 0; overflow: hidden; }
+.moon-gallery img { height: 100%; object-fit: cover; }
+
 .how { padding-top: 90px; }
 .steps { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); }
 .steps li { padding: 12px 52px 18px; text-align: center; border-right: 1px solid var(--line); }
@@ -157,6 +193,10 @@ footer { padding: 60px max(28px, calc((100% - var(--max))/2)) 34px; background: 
   .product-showcase, .about { grid-template-columns: 1fr; }
   .product-main { min-height: 52vw; }
   .about-image { min-height: 430px; }
+  .moon-collection { grid-template-columns: 1fr; }
+  .moon-copy { order: 2; }
+  .moon-feature { min-height: 58vw; }
+  .moon-gallery { order: 3; }
   .trust { grid-template-columns: 1fr 1fr; }
   .trust div:nth-child(2) { border-right: 0; }
   .trust div:nth-child(-n+2) { border-bottom: 1px solid rgba(211,181,115,.45); }
@@ -179,6 +219,11 @@ footer { padding: 60px max(28px, calc((100% - var(--max))/2)) 34px; background: 
   .lifestyle-gallery { grid-template-columns: 1fr; }
   .lifestyle-gallery figure { height: 82vw; max-height: 520px; }
   .lifestyle-gallery figure:last-child { height: 70vw; }
+  .moon-collection { margin-top: 82px; }
+  .moon-copy { padding: 48px 24px 54px; }
+  .moon-feature { min-height: 82vw; }
+  .moon-gallery { grid-template-columns: 1fr; }
+  .moon-gallery figure { height: 72vw; max-height: 500px; }
   .steps { grid-template-columns: 1fr; }
   .steps li { border-right: 0; border-bottom: 1px solid var(--line); padding: 34px 20px; }
   .steps li:last-child { border-bottom: 0; }
