@@ -53,6 +53,7 @@ h3 { font-size: clamp(1.55rem, 2.2vw, 2rem); }
 
 nav { display: flex; justify-content: center; gap: 42px; }
 nav a, .footer-links a { text-decoration: none; font-weight: 500; }
+nav a { white-space: nowrap; }
 nav a:hover, .footer-links a:hover { text-decoration: underline; text-underline-offset: 5px; }
 
 .button {
@@ -176,6 +177,47 @@ nav a:hover, .footer-links a:hover { text-decoration: underline; text-underline-
 .about-copy { align-self: center; max-width: 630px; padding: 85px clamp(42px, 7vw, 110px); }
 .about-copy p:not(.section-label) { color: var(--muted); }
 
+.app-introduction {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(300px, .7fr);
+  gap: clamp(52px, 8vw, 110px);
+  align-items: center;
+}
+.app-introduction-copy { max-width: 760px; }
+.app-introduction-copy > p:not(.section-label) { color: var(--muted); }
+.app-introduction-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 30px; }
+.identity-panel { padding: clamp(30px, 4vw, 52px); background: var(--paper-deep); border-top: 3px solid var(--gold); }
+.identity-panel dl { margin: 0; }
+.identity-panel div { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.identity-panel div:first-child { padding-top: 0; }
+.identity-panel div:last-child { padding-bottom: 0; border-bottom: 0; }
+.identity-panel dt, .policy-meta dt { color: var(--muted); font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.identity-panel dd, .policy-meta dd { margin: 5px 0 0; font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.38rem; font-weight: 600; line-height: 1.2; }
+
+.legal-header nav a[aria-current="page"], .footer-links a[aria-current="page"] { text-decoration: underline; text-underline-offset: 5px; }
+.legal-page { border-top: 1px solid var(--line); }
+.legal-hero { padding: clamp(72px, 10vw, 138px) max(24px, calc((100% - 980px)/2)); background: var(--paper-deep); }
+.legal-hero h1 { max-width: 900px; font-size: clamp(3.8rem, 8vw, 7.2rem); }
+.legal-lead { max-width: 790px; margin: 30px 0 0; color: #39423d; font-size: clamp(1.08rem, 2vw, 1.3rem); }
+.policy-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 54px 0 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.policy-meta div { padding: 24px 30px; border-right: 1px solid var(--line); }
+.policy-meta div:first-child { padding-left: 0; }
+.policy-meta div:last-child { border-right: 0; }
+.legal-content { width: min(820px, calc(100% - 48px)); margin: 0 auto; padding: 80px 0 110px; }
+.legal-content section { padding: 34px 0; border-bottom: 1px solid var(--line); }
+.legal-content section:first-child { padding-top: 0; }
+.legal-content h2 { font-size: clamp(2rem, 4vw, 2.75rem); }
+.legal-content p, .legal-content li { color: #39423d; }
+.legal-content ul, .legal-content ol { padding-left: 24px; }
+.legal-content li { margin: 11px 0; }
+.workflow-list { list-style: none; counter-reset: workflow; padding-left: 0 !important; }
+.workflow-list li { counter-increment: workflow; position: relative; padding: 4px 0 20px 54px; }
+.workflow-list li::before { content: counter(workflow); position: absolute; left: 0; top: 0; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--green); color: #fff; font-family: Georgia, serif; }
+.service-disclaimer { margin-top: 42px; padding: 26px 30px; border-left: 3px solid var(--gold); background: var(--paper-deep); }
+.service-disclaimer p { margin: 0; }
+.legal-footer { margin-top: 0; }
+.legal a { text-underline-offset: 3px; }
+
 footer { padding: 60px max(28px, calc((100% - var(--max))/2)) 34px; background: #092f24; color: white; }
 .footer-brand { display: flex; align-items: center; gap: 24px; }
 .footer-brand img { width: 110px; filter: invert(1); }
@@ -184,13 +226,21 @@ footer { padding: 60px max(28px, calc((100% - var(--max))/2)) 34px; background: 
 .legal { color: #c3d0c8; font-size: .75rem; line-height: 1.6; }
 .legal p { max-width: 980px; }
 
+@media (max-width: 1100px) and (min-width: 901px) {
+  .site-header { grid-template-columns: 140px 1fr auto; gap: 18px; }
+  .brand { width: 118px; }
+  nav { gap: 18px; }
+  nav a { font-size: .82rem; }
+  .button-small { padding-inline: 16px; font-size: .82rem; }
+}
+
 @media (max-width: 900px) {
   .site-header { grid-template-columns: 1fr auto; min-height: 90px; }
   nav { display: none; }
   .hero { grid-template-columns: 1fr; }
   .hero-copy { order: 2; padding: 58px 28px 70px; }
   .hero-image { min-height: 54vw; max-height: 520px; }
-  .product-showcase, .about { grid-template-columns: 1fr; }
+  .product-showcase, .about, .app-introduction { grid-template-columns: 1fr; }
   .product-main { min-height: 52vw; }
   .about-image { min-height: 430px; }
   .moon-collection { grid-template-columns: 1fr; }
@@ -233,6 +283,15 @@ footer { padding: 60px max(28px, calc((100% - var(--max))/2)) 34px; background: 
   .trust div:last-child { border-bottom: 0; }
   .about-image { min-height: 72vw; }
   .about-copy { padding: 58px 26px 68px; }
+  .legal-header nav { display: none; }
+  .legal-hero { padding: 64px 24px; }
+  .legal-hero h1 { font-size: clamp(3rem, 14vw, 4.8rem); }
+  .policy-meta { grid-template-columns: 1fr; }
+  .policy-meta div, .policy-meta div:first-child { padding: 18px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .policy-meta div:last-child { border-bottom: 0; }
+  .legal-content { width: calc(100% - 36px); padding: 62px 0 80px; }
+  .legal-content section { padding: 28px 0; }
+  .app-introduction-actions { align-items: flex-start; flex-direction: column; }
   .footer-brand { align-items: flex-start; flex-direction: column; }
 }
 

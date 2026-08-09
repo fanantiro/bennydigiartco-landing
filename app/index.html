@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete description of BennyDigiArtCo Content Publisher, an internal Pinterest publishing application operated by Benny Digital Art Co.">
+  <meta property="og:title" content="BennyDigiArtCo Content Publisher | App Description">
+  <meta property="og:description" content="Purpose, workflow, Pinterest API use and data practices for BennyDigiArtCo Content Publisher.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bennydigiartco-landing.pages.dev/app/">
+  <title>BennyDigiArtCo Content Publisher | App Description</title>
+  <link rel="icon" type="image/png" href="/assets/benny-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header legal-header">
+    <a class="brand" href="/" aria-label="Benny Digital Art Co home">
+      <img src="/assets/benny-logo.png" alt="Benny Digital Art Co">
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a aria-current="page" href="/app/">App Description</a>
+      <a href="/privacy-policy/">Privacy Policy</a>
+    </nav>
+    <a class="button button-small" href="mailto:fanantiro2017@gmail.com">Contact</a>
+  </header>
+
+  <main class="legal-page app-page">
+    <header class="legal-hero app-hero">
+      <h1>BennyDigiArtCo<br>Content Publisher</h1>
+      <p class="legal-lead">An internal Pinterest content preparation, review, scheduling and publishing application operated by Benny Digital Art Co.</p>
+      <dl class="policy-meta">
+        <div><dt>Business</dt><dd>Benny Digital Art Co</dd></div>
+        <div><dt>Application type</dt><dd>Local, owner-operated tool</dd></div>
+        <div><dt>Intended user</dt><dd>Benny Digital Art Co business owner</dd></div>
+      </dl>
+    </header>
+
+    <article class="legal-content">
+      <section>
+        <h2>Application purpose</h2>
+        <p>BennyDigiArtCo Content Publisher helps Benny Digital Art Co manage the business's own original content across its Etsy and Pinterest workflows. The application converts business-owned Etsy listing information and product imagery into draft Pinterest content, presents that content for human review, and publishes only the Pins selected and approved by the operator.</p>
+      </section>
+
+      <section>
+        <h2>How the workflow operates</h2>
+        <ol class="workflow-list">
+          <li><strong>Prepare:</strong> The operator imports original product images and listing information owned by Benny Digital Art Co.</li>
+          <li><strong>Create drafts:</strong> The application creates alternative Pin layouts and accompanying titles, descriptions and destination links.</li>
+          <li><strong>Human review:</strong> The operator previews the results, edits them where necessary, and individually selects the Pins approved for publishing.</li>
+          <li><strong>Choose destination and timing:</strong> The operator chooses the Pinterest Board and publishing schedule for approved content.</li>
+          <li><strong>Publish through Pinterest:</strong> The application uses Pinterest's official OAuth flow and API to create the approved Pins on the connected business account.</li>
+          <li><strong>Record status:</strong> The application retains local publishing status and may retrieve Pin performance information for the operator's own reporting.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Pinterest API use</h2>
+        <p>The application is designed to request only the Pinterest permissions needed for its stated workflow, including reading Boards, reading Pins and creating Pins. OAuth access and refresh tokens are used to authorize API calls. The application does not collect Pinterest passwords, verification codes or session cookies, and it does not bypass Pinterest's authorization flow.</p>
+      </section>
+
+      <section>
+        <h2>User control and publishing safeguards</h2>
+        <p>The operator remains in control throughout the workflow. Draft generation does not publish content. Each Pin must pass through the application's review and selection queue before scheduling or publishing. The operator can remove items from the queue, edit content, stop scheduled work and revoke the Pinterest connection.</p>
+      </section>
+
+      <section>
+        <h2>Intended access</h2>
+        <p>The current application is for the business owner's use with Benny Digital Art Co's own Pinterest presence. It is not a public social network, consumer login service, data broker, or tool for collecting credentials from other Pinterest users.</p>
+      </section>
+
+      <section>
+        <h2>Business relationship</h2>
+        <p>Benny Digital Art Co is the business identity behind both the <a href="https://www.etsy.com/shop/BennyDigiArtCo?ref=seller-platform-mcnav" target="_blank" rel="noopener noreferrer">BennyDigiArtCo Etsy shop</a> and BennyDigiArtCo Content Publisher. This website provides the public business, application and privacy information for that same operation.</p>
+      </section>
+
+      <section>
+        <h2>Privacy and contact</h2>
+        <p>For details about OAuth tokens, Pinterest data, local storage, retention, deletion and third-party services, read the <a href="/privacy-policy/">BennyDigiArtCo Content Publisher Privacy Policy</a>.</p>
+        <p>Questions about the application can be sent to <a href="mailto:fanantiro2017@gmail.com">fanantiro2017@gmail.com</a>.</p>
+      </section>
+
+      <aside class="service-disclaimer">
+        <p>BennyDigiArtCo Content Publisher is independently operated by Benny Digital Art Co and is not affiliated with or endorsed by Pinterest or Etsy.</p>
+      </aside>
+    </article>
+  </main>
+
+  <footer class="legal-footer">
+    <div class="footer-brand">
+      <img src="/assets/benny-logo.png" alt="Benny Digital Art Co">
+      <p>Printable art for beautiful, personal spaces.</p>
+    </div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/app/" aria-current="page">App Description</a>
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="mailto:fanantiro2017@gmail.com">Contact</a>
+    </div>
+    <div class="legal"><p>© 2026 Benny Digital Art Co. All rights reserved.</p></div>
+  </footer>
+</body>
+</html>
