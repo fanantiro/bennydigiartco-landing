@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Complete description of BennyDigiArtCo Content Publisher, an internal Pinterest publishing application operated by Benny Digital Art Co.">
-  <meta property="og:title" content="BennyDigiArtCo Content Publisher | App Description">
-  <meta property="og:description" content="Purpose, workflow, Pinterest API use and data practices for BennyDigiArtCo Content Publisher.">
+  <meta name="description" content="Complete description of Benny Digital Art Pin Workflow, a private Windows Pinterest publishing application used by Benny Digital Art.">
+  <meta property="og:title" content="Benny Digital Art Pin Workflow | App Description">
+  <meta property="og:description" content="Purpose, workflow, Pinterest API use and data practices for Benny Digital Art Pin Workflow.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bennydigiartco-landing.pages.dev/app/">
-  <title>BennyDigiArtCo Content Publisher | App Description</title>
+  <title>Benny Digital Art Pin Workflow | App Description</title>
   <link rel="icon" type="image/png" href="/assets/benny-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,28 +30,29 @@
 
   <main class="legal-page app-page">
     <header class="legal-hero app-hero">
-      <h1>BennyDigiArtCo<br>Content Publisher</h1>
-      <p class="legal-lead">An internal Pinterest content preparation, review, scheduling and publishing application operated by Benny Digital Art Co.</p>
+      <h1>Benny Digital Art<br>Pin Workflow</h1>
+      <p class="legal-lead">A private Windows desktop application used only by Benny Digital Art to prepare and publish organic content to our own Pinterest Business account.</p>
       <dl class="policy-meta">
-        <div><dt>Business</dt><dd>Benny Digital Art Co</dd></div>
-        <div><dt>Application type</dt><dd>Local, owner-operated tool</dd></div>
-        <div><dt>Intended user</dt><dd>Benny Digital Art Co business owner</dd></div>
+        <div><dt>Business</dt><dd>Benny Digital Art</dd></div>
+        <div><dt>Application type</dt><dd>Private Windows desktop application</dd></div>
+        <div><dt>Intended user</dt><dd>Benny Digital Art business owner</dd></div>
       </dl>
     </header>
 
     <article class="legal-content">
       <section>
         <h2>Application purpose</h2>
-        <p>BennyDigiArtCo Content Publisher helps Benny Digital Art Co manage the business's own original content across its Etsy and Pinterest workflows. The application converts business-owned Etsy listing information and product imagery into draft Pinterest content, presents that content for human review, and publishes only the Pins selected and approved by the operator.</p>
+        <p>Benny Digital Art Pin Workflow supports our internal Etsy-to-Pinterest content workflow. When an Etsy product listing is created as a draft, the application prepares Pinterest-ready content drafts locally. These drafts may include product images, suggested Pin titles, descriptions, recommended Boards and proposed publishing dates.</p>
+        <p>Creating an Etsy draft does not publish anything to Pinterest. After the Etsy listing is manually published and a public Etsy product URL becomes available, proposed Pins become available for review.</p>
       </section>
 
       <section>
         <h2>How the workflow operates</h2>
         <ol class="workflow-list">
-          <li><strong>Prepare:</strong> The operator imports original product images and listing information owned by Benny Digital Art Co.</li>
+          <li><strong>Prepare:</strong> The operator imports original product images and listing information owned by Benny Digital Art.</li>
           <li><strong>Create drafts:</strong> The application creates alternative Pin layouts and accompanying titles, descriptions and destination links.</li>
-          <li><strong>Human review:</strong> The operator previews the results, edits them where necessary, and individually selects the Pins approved for publishing.</li>
-          <li><strong>Choose destination and timing:</strong> The operator chooses the Pinterest Board and publishing schedule for approved content.</li>
+          <li><strong>Human review:</strong> The account owner individually reviews and selects each Pin, confirming its image, title, description and destination URL.</li>
+          <li><strong>Choose destination and timing:</strong> The operator confirms the Pinterest Board and proposed publishing date for each approved Pin.</li>
           <li><strong>Publish through Pinterest:</strong> The application uses Pinterest's official OAuth flow and API to create the approved Pins on the connected business account.</li>
           <li><strong>Record status:</strong> The application retains local publishing status and may retrieve Pin performance information for the operator's own reporting.</li>
         </ol>
@@ -59,32 +60,39 @@
 
       <section>
         <h2>Pinterest API use</h2>
-        <p>The application is designed to request only the Pinterest permissions needed for its stated workflow, including reading Boards, reading Pins and creating Pins. OAuth access and refresh tokens are used to authorize API calls. The application does not collect Pinterest passwords, verification codes or session cookies, and it does not bypass Pinterest's authorization flow.</p>
+        <p>The initial Pinterest API integration is limited to reading our own Boards, creating approved organic Pins, reading our own published Pins, and reading basic performance data for our own Pins. OAuth access and refresh tokens authorize these API calls.</p>
+        <p>The application connects only to Benny Digital Art's own Pinterest Business account through Pinterest OAuth 2.0. It does not collect Pinterest passwords, verification codes or session cookies, and it does not bypass Pinterest's authorization flow.</p>
       </section>
 
       <section>
         <h2>User control and publishing safeguards</h2>
-        <p>The operator remains in control throughout the workflow. Draft generation does not publish content. Each Pin must pass through the application's review and selection queue before scheduling or publishing. The operator can remove items from the queue, edit content, stop scheduled work and revoke the Pinterest connection.</p>
+        <p>The operator remains in control throughout the workflow. Draft generation does not publish content. Each Pin must pass through the application's review and selection queue before scheduling or publishing. The application does not automatically bulk-publish Pins without individual approval. The operator can remove items from the queue, edit content, stop scheduled work and revoke the Pinterest connection.</p>
       </section>
 
       <section>
         <h2>Intended access</h2>
-        <p>The current application is for the business owner's use with Benny Digital Art Co's own Pinterest presence. It is not a public social network, consumer login service, data broker, or tool for collecting credentials from other Pinterest users.</p>
+        <p>The current application is for the business owner's use with Benny Digital Art's own Pinterest presence. It is not a public social network, consumer login service, data broker, or tool for collecting credentials from other Pinterest users.</p>
+        <p>It does not automate follows, saves, comments, messages or other engagement actions, and it does not scrape Pinterest.</p>
+      </section>
+
+      <section>
+        <h2>Initial version boundaries</h2>
+        <p>The initial version covers organic Pin creation, scheduling and basic reporting only. Paid advertising management, ad campaign creation, public multi-user access and automated engagement are not included.</p>
       </section>
 
       <section>
         <h2>Business relationship</h2>
-        <p>Benny Digital Art Co is the business identity behind both the <a href="https://www.etsy.com/shop/BennyDigiArtCo?ref=seller-platform-mcnav" target="_blank" rel="noopener noreferrer">BennyDigiArtCo Etsy shop</a> and BennyDigiArtCo Content Publisher. This website provides the public business, application and privacy information for that same operation.</p>
+        <p>Benny Digital Art is the business name used for this application. The business trades online as Benny Digital Art Co and operates the <a href="https://www.etsy.com/shop/BennyDigiArtCo?ref=seller-platform-mcnav" target="_blank" rel="noopener noreferrer">BennyDigiArtCo Etsy shop</a>. This website provides the public business, application and privacy information for the same operation.</p>
       </section>
 
       <section>
         <h2>Privacy and contact</h2>
-        <p>For details about OAuth tokens, Pinterest data, local storage, retention, deletion and third-party services, read the <a href="/privacy-policy/">BennyDigiArtCo Content Publisher Privacy Policy</a>.</p>
+        <p>For details about OAuth tokens, Pinterest data, local storage, retention, deletion and third-party services, read the <a href="/privacy-policy/">Benny Digital Art Pin Workflow Privacy Policy</a>.</p>
         <p>Questions about the application can be sent to <a href="mailto:fanantiro2017@gmail.com">fanantiro2017@gmail.com</a>.</p>
       </section>
 
       <aside class="service-disclaimer">
-        <p>BennyDigiArtCo Content Publisher is independently operated by Benny Digital Art Co and is not affiliated with or endorsed by Pinterest or Etsy.</p>
+        <p>Benny Digital Art Pin Workflow is independently operated by Benny Digital Art and is not affiliated with or endorsed by Pinterest or Etsy.</p>
       </aside>
     </article>
   </main>
