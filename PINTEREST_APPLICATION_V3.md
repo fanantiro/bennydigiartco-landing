@@ -7,13 +7,11 @@
 - Online trading identity: `Benny Digital Art Co`
 - Etsy shop: `BennyDigiArtCo`
 
-## URLs currently online
+## Official production URLs
 
-- Website: `https://bennydigiartco-landing.pages.dev/`
-- Privacy Policy: `https://bennydigiartco-landing.pages.dev/privacy-policy/`
-- Supporting App Description: `https://bennydigiartco-landing.pages.dev/app/`
-
-Before the next application, replace these with the same paths on a purchased custom domain if one is connected.
+- Website: `https://bennydigitalartco.com/`
+- Privacy Policy: `https://bennydigitalartco.com/privacy-policy/`
+- Supporting App Description: `https://bennydigitalartco.com/app/`
 
 ## App purpose
 
